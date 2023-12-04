@@ -126,7 +126,7 @@ footer{
         margin-left: .5rem;
         margin-right: .5rem;
         color: var(---Blue);
-        font-size: 1rem;
+        font-size: .5rem;
         font-weight: bolder;
         border: .5rem;
         border-color: var(---Blue);
@@ -137,7 +137,7 @@ footer{
         margin-top: 0;
     }
     .brow,.cleanse{
-        font-size: .8rem;
+        font-size: .5rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
@@ -159,6 +159,6 @@ footer{
         margin-top: 1rem;
     }
     footer{
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
   }
