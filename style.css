@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Allura', cursive;
+    overflow-y: hidden;
+}
+:root{
+    ---Blue:rgb(28, 28, 61);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgb(28, 28, 61) 0%,
+        rgb(28, 28, 61) 50%,
+        orange 50%,
+        orange 100%
+    );
+}
+.container{
+    background:white;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem auto;
+    height: 90vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 1rem ;
+    margin: .5rem ;
+    background-color: orange;
+    transition: ease-in;
+    transition-duration: 4s;
+    transition-delay: 1s;
+}
+.header img{
+    position: relative;
+    width: 15%;
+    bottom: 2rem;
+}
+.beau{
+    display: none;
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+    margin-left: 2rem;
+}
+ul li a{
+    text-decoration: none;
+    color:var(---Blue) ;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+a:hover{
+    color:white;
+}
+.mid{
+    background-image: url(./images/gettyimages-1303861160-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+.mid h1{
+    font-weight: 400;
+    font-size: 6rem;
+    margin-left: .5rem;
+    color:var(---Blue);
+    margin-top: 2rem;
+}
+.mid p{
+    font-weight: 400;
+    color: white;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.mid span{
+    color: orange;
+}
+button{
+    width: 15%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: orange;
+    color: var(---Blue);
+    font-weight: 600;
+    font-size: 1rem;
+    height: 5vh;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+button:hover{
+    border-color: var(---Blue);
+    border: 1rem;
+}
+.close-menu img{
+    display: none;
+}
+footer{
+    color: orange;
+    font-weight: bold;
+  }
+  @media(max-width: 480px) and (min-width:320px){
+    ul{
+        display: none;
+    }
+    .header{
+        height: 15vh;
+    }
+    .logo{
+        display: none;
+    }
+    .beau{
+        font-style: italic;
+        font-weight: bolder;
+        color: var(---Blue);
+        display: block;
+    }
+    .nav-wrapper{
+        background:orange;
+        width: 70%;
+        height: 80vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding:1rem;
+        display: none;
+        opacity: .8;
+    }
+    .close-menu img{
+        height: 3vh;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        display: block;
+        float: right;
+        width: 12%;
+        position:relative;
+    }
+    ul{
+        margin-top: 2.5rem; 
+        background: white;
+        padding: 1.5rem;
+        width: 80%;
+        margin: 2.5rem auto 1rem auto;
+        border-radius: .7rem;
+    }
+    ul li{
+        display: block;
+        margin-bottom: 2rem;
+        border-bottom: .1rem solid hsl(0, 0%, 81%);
+        padding-bottom: 1rem;
+        cursor: pointer;
+    }
+     ul li:last-child{
+        border-bottom: none;
+    }
+    ul li:first-child{
+        margin-top: 2.5rem;
+    }
+    ul li a{
+        color: var(---Blue);
+    }
+    a:hover{
+        color:white;
+    }
+    .menu-icon img{
+        height: 7vh;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        display: block;
+        width: 15%;
+    }
+     .mid h1{
+        font-size: 2.7rem;
+     }
+     .mid p{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+     }
+     button{
+        width: 35%;
+     }
+     footer{
+        margin-top: 3rem;
+     }
+  }
