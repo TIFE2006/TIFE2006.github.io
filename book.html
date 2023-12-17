@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK AN APPOINTMENT</title>
+    <link rel="stylesheet" href="./book.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Tang" rel="stylesheet">
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="./images/Logopit_1699299454665-removebg-preview.png" alt="">
+            <h3 class="beau">Beaussence.</h3>
+                <ul class="nav-wrapper">
+                    <div class="close-menu">
+                        <span class="close-menu"><img src="./images/icon-close-menu.svg" alt=""></span>
+                        </div>    
+                 <li><a href="./home.html">Home</a></li>
+                 <li><a target="_blank" href="./about.html">About Us</a></li>
+                 <li><a target="_blank" href="./services.html">Services</a></li>
+                 <li><a target="_blank" href="./book.html">Book Us</a></li>
+                 <li><a target="_blank" href="./catalogue.html">Catalogue</a></li>
+                 <li><a target="_blank" href="./contact.html">Contact Us</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <span class="menu-icon"><img src="./images/icon-hamburger.svg" alt=""></span>
+                </div>
+        </div>
+            <div class="form">
+                <div class="title">
+                    <h1>Book An Appointment Today!</h1>
+                </div>
+                <form action="" name="myForm" onsubmit="return(validate())">
+                    <input type="text" name="fullName" placeholder="Enter Name">
+                    <p class="name-err"></p>
+                    <input type="email" name="email" placeholder="Enter mail">
+                    <p class="email-err"></p>
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <p class="phone-err"></p>
+                    <input type="password" name="password" placeholder="Enter password">
+                    <p class="pass-err"></p>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password">
+                    <p class="confirm-err"></p>
+                    <input type="text" name="service" placeholder="Service(s) Needed"> 
+                    <p class="serv-err"></p>
+                    <label for="">Address:</label>
+                    <input type="text" name="address" placeholder="Only required for home service">
+                    <p class="address-err"></p>
+                    <label for="">Date and Time:</label>
+                    <input type="datetime-local" name="date" >
+                    <input type="text" name="note" placeholder="Note of necessary details for your stylist:">
+                    <p class="note-err"></p>
+                    <input type="submit" value="BOOK" class="book">
+                </form> 
+                    <footer>
+                        &copy;Copyright Beaussence.com 2023
+                      </footer>
+                
+                
+            </div>
+    </div>
+</section>
+<!-- <section class="modal">
+    <div class="modal-wrapper">
+        <span class="x"><img src="./images/icon-close-menu.svg" alt=""></span>
+        <img class="check" src="./emoji-removebg-preview.png" alt="">
+        <div class="thank">
+            <h1>Thank You!</h1>
+            <p>Your Beaussence appointment has been succesfully booked <br>If there is any need for cancellation,kindly inform us before the appointment day to prevent charges without service. </p>
+            <h3>THE BEAUSSENCE TEAM CAN'T WAIT TO HAVE YOU!</h3>
+        </div>
+    </div>
+    
+</section> -->
+<script src="./script.js"></script>
+</body>
+</html>
